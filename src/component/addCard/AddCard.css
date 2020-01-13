@@ -1,0 +1,49 @@
+.add{
+    display:flex;
+    flex-direction: column;
+    height: 50%;
+    width: 30%;
+
+    border-radius: 10px;
+    position:fixed;
+    z-index: 1;
+    background: linear-gradient(138deg, rgba(233,254,251,1) 0%, rgba(204,197,197,1) 100%);
+
+    align-items: center;
+    right: 0;
+    top:150px;
+    justify-content: center;
+}
+
+.inputadd{
+   justify-content: center;
+    display: flex;
+    flex-direction: column;
+  margin-left:20px
+
+}
+.champs{
+    height: 30px; 
+    margin-top: 10px;
+    width:350px;
+  
+}
+.valide{
+    border: 1px solid black;
+    width:80px;
+    height: 30px;
+    margin-top:30px;
+    border-radius: 3px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: linear-gradient(138deg, rgba(74,74,74,1) 0%, rgba(17,17,17,1) 100%);
+    color:rgba(255, 255, 255, 0.801);
+    font-weight: 600;
+    font-size: 15px;
+}
+.title{
+    font-size: 30px;
+    color:black;
+    font-weight: 800;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 0px;
+}

@@ -1,0 +1,60 @@
+
+.list{
+    /* margin-top: 20px; */
+    display:flex;
+    flex-wrap: wrap;
+    margin-left: 200px;
+    margin-right: 200px;
+   
+   
+}
+.card{
+width:216px;
+height:358px;
+border-radius: 10px;
+margin-right: 10px;
+background: linear-gradient(138deg, rgba(233,254,251,1) 0%, rgba(204,197,197,1) 100%);
+margin-bottom: 20px;
+overflow: hidden;
+}
+.card:hover{
+    transform: translateY(10px);
+    box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.253);
+    transition: ease-in-out 0.3s;
+}
+.affiche{
+    position: relative;
+ 
+}
+.image{
+    width:216px;
+    height:300px;
+   
+  
+}
+.rating{
+    position: absolute;
+    color:rgba(235, 235, 235, 0.829);
+    margin-top: 0px;
+    right:0 ;
+    font-size: 22px;
+  width:100px;
+  text-align: right;
+}
+.name{
+    width:100%;
+    text-align: center;
+    height:35px ;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+.adde{
+    width:216px;
+    height:150px;
+    margin-top: 20px;
+    margin-left: 200px;
+    font-size: 30px;
+    background: linear-gradient(138deg, rgba(233,254,251,1) 0%, rgba(204,197,197,1) 100%);
+    border-radius: 10px;
+  
+  }
