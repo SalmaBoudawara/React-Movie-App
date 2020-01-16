@@ -1,6 +1,7 @@
 import React from 'react'
 import './MovieList.css'
-export default function MovieList(props) {
+import WithLoading from '../loading/Loading';
+ function MovieList(props) {
     const Rating = (count) => {
         let stars = []
         for(let i = 0; i < 5; i++) {
@@ -39,3 +40,4 @@ export default function MovieList(props) {
           </div>
     )
 }
+export default WithLoading(MovieList);

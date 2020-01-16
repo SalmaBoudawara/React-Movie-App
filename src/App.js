@@ -4,6 +4,7 @@ import MovieList from './component/movieList/MovieList'
 import AddCard from './component/addCard/AddCard';
 import SearchCard from './component/search/SearchCard';
 import SearchRating from './component/searchRating/SearchRating.js'
+
 class App extends React.Component {
   constructor(props){
     super(props)
@@ -26,7 +27,9 @@ class App extends React.Component {
    ], 
    show:false,
    searchMovie:'',
-   rate:0
+   rate:0,
+   isLoding:false
+
     }
   }
   // ajout nouveau film 
@@ -55,18 +58,24 @@ onSearch=(name)=>{
 onSearchRating=(selected)=>{
   this.setState({rate:selected})
 }
-  
+// function pour la durée du loader
+componentDidMount = () => {
+  setTimeout(() => {
+    this.setState({ isLoding: true});
+  }, 3000);
+};
   render(){ 
     
   return (
     <div className="App">
-      <div className="searched">
+      <div className="searched" >
+        
       <SearchCard  search={this.onSearch}/>
       <SearchRating click={this.onSearchRating} rating={this.state.rate}/>
       </div>
-      <MovieList movie={this.state} modal={this.showModal}  />
+      <MovieList movie={this.state} modal={this.showModal} loader={this.state.isLoding}   />
       <AddCard add={this.addEvent} show={this.state.show} hide={this.hideModal}/>
-      
+     
     </div>
   );
 }

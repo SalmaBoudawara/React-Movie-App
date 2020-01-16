@@ -1,5 +1,6 @@
 import React from 'react'
 import './SearchRating.css'
+
 export default function SearchRating(props) {
     const RatingList = (count) => {
         let stars = []
